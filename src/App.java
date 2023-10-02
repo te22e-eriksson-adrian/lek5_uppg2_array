@@ -35,7 +35,7 @@ public class App {
         System.out.println("Du ska nu gissa på vilka ord ur det svenska språket som finns lagrade i fältet 'text_array'.");
         System.out.print("Skriv din gissning här: ");
         String gissning = tangentbord.nextLine();
-        System.out.println("Resultat: "+text_array[0].equals(gissning)+", "+text_array[1].equals(gissning)+", "+text_array[2].equals(gissning));
+        System.out.println("Resultat 'Hej': "+text_array[0].equals(gissning)+", Resultat 'på': "+text_array[1].equals(gissning)+",Resultat 'dig': "+text_array[2].equals(gissning));
         tangentbord.close();
     }
 }
