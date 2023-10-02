@@ -28,6 +28,14 @@ public class App {
         heltal_array[0] = heltal_array[3];
         heltal_array[3] = temp;
         System.out.println("Fältet innehåller talen: "+heltal_array[0]+" "+heltal_array[1]+" "+heltal_array[2]+" "+heltal_array[3]);
+
+        //Kod som låter användaren gissa vad som står i ett fält
+        System.out.println("         ");
+        String[] text_array = {"Hej", "på", "dig"};
+        System.out.println("Du ska nu gissa på vilka ord ur det svenska språket som finns lagrade i fältet 'text_array'.");
+        System.out.print("Skriv din gissning här: ");
+        String gissning = tangentbord.nextLine();
+        System.out.println("Resultat: "+text_array[0].equals(gissning)+", "+text_array[1].equals(gissning)+", "+text_array[2].equals(gissning));
         tangentbord.close();
     }
 }
