@@ -20,6 +20,14 @@ public class App {
         tangentbord.nextLine();
         int heltal_summa = heltal_array[0]+heltal_array[1]+heltal_array[2]+heltal_array[3];
         System.out.println("Summan av heltalen: "+heltal_summa);
+        System.out.println("Fältet innehåller talen: "+heltal_array[0]+" "+heltal_array[1]+" "+heltal_array[2]+" "+heltal_array[3]);
+
+        //Kod som byter plats på första och sista talet i fältet
+        System.out.println("        ");
+        int temp = heltal_array[0];
+        heltal_array[0] = heltal_array[3];
+        heltal_array[3] = temp;
+        System.out.println("Fältet innehåller talen: "+heltal_array[0]+" "+heltal_array[1]+" "+heltal_array[2]+" "+heltal_array[3]);
         tangentbord.close();
     }
 }
